@@ -1,0 +1,18 @@
+[Unit]
+Description=Puma Rails Server
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/bin/bash -lc 'bundle exec puma'
+Restart=always
+StandardOutput=null
+StandardError=null
+SyslogIdentifier=puma
+User=root
+Group=root
+WorkingDirectory=/root/project
+
+[Install]
+WantedBy=multi-user.target
+

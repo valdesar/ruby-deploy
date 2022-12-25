@@ -1,0 +1,29 @@
+<div clas="grid-x grid-padding-x">
+  <div class="medium-12 cell">
+    <h3>Выберите группу для просмотра</h3>
+  </div>
+</div>
+<div class="grid-x grid-padding-x">
+  <div class="medium-auto cell">
+    <a href="<%= schedule_path %>">К выбору категории</a>
+  </div>
+</div>
+<form method="get">
+<div class="grid-x grid-padding-x">
+    <div class="medium-10 cell text-justify">
+      <input name="group_name" placeholder="Часть имени группы" style="width: 100%;">
+    </div>
+    <div class="medium-2 cell">
+      <input class="button" type="submit" value="Фильтровать">
+    </div>
+</div>
+</form>
+<div class="grid-x grid-padding-x">
+  <div class="medium-auto">
+    <ul>
+      <li><a href="<%= group_path('ИВТ-32БО') %>">ИВТ-32БО</a></li>
+      <li><a href="<%= group_path('ИВТ-41БО') %>">ИВТ-41БО</a></li>
+      <li><a href="<%= group_path('ИВТ-42БО') %>">ИВТ-42БО</a></li>
+    </ul>
+  </div>
+</div>
